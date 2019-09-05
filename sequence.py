@@ -12,23 +12,23 @@ for i in range(1,n+1):
         first = 1
         second = 0
         third = 0
-        sum3= first + second + third
-        print(sum3, end=", ")
+        sum1= first + second + third
+        print(sum1, end=", ")
     elif i == 2:
         first = 1
-        second = 1
+        second = sum1
         third = 0
-        sum3= first + second + third
-        print(sum3, end=", ")
+        sum2= first + second + third
+        print(sum2, end=", ")
     elif i == 3:
         first = 1
-        second = 1
-        third = 1
+        second = sum1
+        third = sum2
         sum3= first + second + third
         print(sum3, end=", ")
     else:
-        first = i-2
-        second = i-1
-        third = i
-        sum3= first + second + third
-        print(sum3, end=", ")
+        first = sum1
+        second = sum2
+        third = sum3
+        sum4= first + second + third
+        print(sum4, end=", ")
